@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rigid Body in 2D Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+        .controls {
+            margin-bottom: 20px;
+        }
+        .controls input {
+            margin-right: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        .controls button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .controls button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <label for="angle">Angle (radians):</label>
+        <input type="number" id="angle" step="0.01" value="1.57"> 
+        <label for="initialX">Initial X Position:</label>
+        <input type="number" id="initialX" step="1" value="5">
+        <label for="initialY">Initial Y Position:</label>
+        <input type="number" id="initialY" step="1" value="5">
+        <label for="translationX">Translation X:</label>
+        <input type="number" id="translationX" step="1" value="10">
+        <label for="translationY">Translation Y:</label>
+        <input type="number" id="translationY" step="1" value="10">
+        <button id="simulate">Simulate</button>
+        <a href="https://drive.google.com/file/d/1uXdHwXV2NF3QQAyDDAVA6nVseZFynVcA/view?usp=sharing" target="_blank">Click here for theory</a>
+    </div>
+    <canvas id="myCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
